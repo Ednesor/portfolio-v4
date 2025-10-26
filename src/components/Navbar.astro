@@ -1,0 +1,130 @@
+<header>
+    <nav
+        id="nav"
+        class="hidden-menu fixed flex-wrap flex justify-center items-center w-full pt-8 z-10 transition-all duration-300 md:m-0!"
+    >
+        <ul class="w-screen flex justify-center flex-wrap gap-5 md:grid md:grid-cols-6 md:w-[90%] md:max-w-5xl">
+            <li class="w-full text-center col-span-1">
+                <a href="#home" class="text-[var(--primaryTextColor)] text-2xl"
+                    >Inicio</a
+                >
+            </li>
+            <li class="w-full text-center">
+                <a href="#about" class="text-[var(--primaryTextColor)] text-2xl"
+                    >Sobre mí</a
+                >
+            </li>
+            <li class="hidden md:block col-span-2"></li>
+            <li class="w-full text-center">
+                <a
+                    href="#projects"
+                    class="text-[var(--primaryTextColor)] text-2xl">Proyectos</a
+                >
+            </li>
+            <li class="w-full text-center">
+                <a
+                    href="#contact"
+                    class="text-[var(--primaryTextColor)] text-2xl">Contacto</a
+                >
+            </li>
+        </ul>
+        <div class="mt-8 w-full h-[10px] bg-[var(--primaryColor)] rounded-b-[10px] md:mt-[-120px]"></div>
+        <div class="trapecio flex justify-center items-center mt-[-10px] w-[200px] h-[70px] bg-[var(--primaryColor)] md:w-[300px] md:mt-[-60px]">
+            <input
+                type="checkbox"
+                name="menu-toggle"
+                id="menu-toggle"
+                class="hidden"
+            />
+            <label
+                for="menu-toggle"
+                class="cursor-pointer w-full flex justify-center mt-4 md:hidden"
+            >
+                <svg
+                    class="w-8 text-[var(--primaryTextColor)] absolute opacity-100 transition-all duration-300"
+                    viewBox="0 -0.5 21 21"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="currentColor"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>menu_navigation_grid [#1529]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                            id="Page-1"
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                        >
+                            <g
+                                id="Dribbble-Light-Preview"
+                                transform="translate(-99.000000, -200.000000)"
+                                fill="currentColor"
+                            >
+                                <g
+                                    id="icons"
+                                    transform="translate(56.000000, 160.000000)"
+                                >
+                                    <path
+                                        d="M60.85,51 L57.7,51 C55.96015,51 54.55,52.343 54.55,54 L54.55,57 C54.55,58.657 55.96015,60 57.7,60 L60.85,60 C62.58985,60 64,58.657 64,57 L64,54 C64,52.343 62.58985,51 60.85,51 M49.3,51 L46.15,51 C44.41015,51 43,52.343 43,54 L43,57 C43,58.657 44.41015,60 46.15,60 L49.3,60 C51.03985,60 52.45,58.657 52.45,57 L52.45,54 C52.45,52.343 51.03985,51 49.3,51 M60.85,40 L57.7,40 C55.96015,40 54.55,41.343 54.55,43 L54.55,46 C54.55,47.657 55.96015,49 57.7,49 L60.85,49 C62.58985,49 64,47.657 64,46 L64,43 C64,41.343 62.58985,40 60.85,40 M52.45,43 L52.45,46 C52.45,47.657 51.03985,49 49.3,49 L46.15,49 C44.41015,49 43,47.657 43,46 L43,43 C43,41.343 44.41015,40 46.15,40 L49.3,40 C51.03985,40 52.45,41.343 52.45,43"
+                                        id="menu_navigation_grid-[#1529]"
+                                    ></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg
+                    class="w-8 text-[var(--primaryTextColor)] opacity-0 transition-all duration-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                        <path
+                            d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<style>
+    .trapecio {
+        clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+    }
+    .hidden-menu {
+        margin-top: -255px;
+    }
+</style>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+    menuToggle?.addEventListener("change", () => {
+        nav?.classList.toggle("hidden-menu");
+    });
+</script>
