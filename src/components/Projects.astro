@@ -1,0 +1,124 @@
+<section id="projects" class="mt-20 overflow-hidden max-w-7xl mx-auto">
+    <h2
+        class="text-3xl font-bold text-[var(--primaryTextColor)] text-center lg:col-span-2 mb-4"
+    >
+        Proyectos
+    </h2>
+    <article
+        class="grid grid-cols-1 gap-4 p-4 w-full md:grid-cols-2 mb-8 items-center"
+    >
+        <div class="text-[var(--primaryTextColor)] flex flex-col gap-4 my-auto">
+            <h3 class="text-2xl text-center lg:text-left">Speeches</h3>
+            <div class="flex gap-4 flex-wrap mx-auto justify-center lg:justify-start">
+                <p class="bg-[var(--primaryColor)] px-6 py-1 rounded-2xl">
+                    React
+                </p>
+                <p class="bg-[var(--primaryColor)] px-6 py-1 rounded-2xl">
+                    Node.js
+                </p>
+                <p class="bg-[var(--primaryColor)] px-6 py-1 rounded-2xl">
+                    PostgreSQL
+                </p>
+            </div>
+            <p class="text-[var(--secondaryTextColor)]">
+                Speeches es una aplicación web que permite crear, personalizar y
+                escuchar discursos generados con inteligencia artificial.
+                Utiliza un motor IA para redactar textos a partir de prompts
+                predefinidos o personalizados, y microservicios para
+                convertirlos en audio realista. Los usuarios pueden guardar sus
+                discursos, administrarlos desde su cuenta y escucharlos
+                directamente desde la plataforma. Desarrollada con Next.js,
+                Node.js, GraphQL y PostgreSQL, ofrece una experiencia fluida y
+                moderna, combinando la generación de contenido inteligente con
+                tecnología de voz natural.
+            </p>
+            <div class="flex gap-4 justify-center items-center">
+                <a
+                    href="https://www.speeches.es"
+                    class="bg-[var(--primaryColor)] px-6 py-2 rounded-lg hover:bg-[var(--terciaryColor)] transition-colors"
+                    >Deploy</a
+                >
+            </div>
+        </div>
+        <div class="relative w-[90%] mx-auto mt-5">
+            <div class="imageBox">
+                <img
+                    src="./project-1.png"
+                    alt="Imagen del proyecto"
+                    class="w-full image"
+                />
+            </div>
+        </div>
+    </article>
+    <article class="grid grid-cols-1 gap-4 p-4 w-full md:grid-cols-2 items-center">
+        <div
+            class="text-[var(--primaryTextColor)] flex flex-col gap-4 my-auto md:order-2"
+        >
+            <h3 class="text-2xl text-center">Food Store</h3>
+            <div class="flex gap-4 flex-wrap mx-auto justify-center">
+                <p class="bg-[var(--primaryColor)] px-6 py-1 rounded-2xl">
+                    TypeScript
+                </p>
+                <p class="bg-[var(--primaryColor)] px-6 py-1 rounded-2xl">
+                    Java
+                </p>
+                <p class="bg-[var(--primaryColor)] px-6 py-1 rounded-2xl">
+                    PostgreSQL
+                </p>
+            </div>
+            <p class="text-[var(--secondaryTextColor)]">
+                Food Store es una aplicación web desarrollada para la gestión
+                integral de un negocio gastronómico. Permite a los
+                administradores gestionar categorías, productos y pedidos, y a
+                los clientes navegar el catálogo, realizar compras y seguir el
+                estado de sus pedidos. Incluye un sistema de carrito con
+                persistencia en localStorage y una API REST construida con
+                Spring Boot, que conecta con un frontend desarrollado en
+                TypeScript, Vite, HTML5 y CSS3. El proyecto demuestra el
+                desarrollo completo de una aplicación fullstack, desde el diseño
+                de la interfaz hasta la integración con el backend.
+            </p>
+            <div class="flex gap-4 justify-center items-center">
+                <a
+                    href=""
+                    class="bg-[var(--primaryColor)] px-6 py-2 rounded-lg hover:bg-[var(--terciaryColor)] transition-colors"
+                    >Deploy</a
+                >
+                <a href="" class="text-[var(--secondaryTextColor)]"
+                    ><span class="decoration-1 underline">Frontend</span> 🐙</a
+                >
+                <a href="https://github.com/Ednesor/food-store-backend" class="text-[var(--secondaryTextColor)]"
+                    ><span class="decoration-1 underline">Backend</span> 🐙</a
+                >
+            </div>
+        </div>
+        <div class="relative w-[90%] mx-auto mt-5">
+            <div class="imageBox">
+                <img
+                    src="./project-2.png"
+                    alt="Imagen del proyecto"
+                    class="w-full image"
+                />
+            </div>
+        </div>
+    </article>
+</section>
+
+<style>
+    .imageBox {
+        position: relative;
+    }
+    .imageBox::after {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        left: 1rem;
+        width: 100%;
+        height: 100%;
+        border: 6px solid var(--primaryColor);
+        z-index: -1;
+    }
+    .image {
+        box-shadow: 0 0 50px -20px var(--terciaryColor);
+    }
+</style>
