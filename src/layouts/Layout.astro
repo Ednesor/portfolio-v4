@@ -1,22 +1,104 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Edgardo Funes</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Edgardo Funes</title>
+    </head>
+    <body class="bg-[var(--primaryBackgroundColor)]">
+        <div class="shadows-container">
+            <div class="shadowBox shadow1"></div>
+            <div class="shadowBox shadow2"></div>
+            <div class="shadowBox shadow3"></div>
+            <div class="shadowBox shadow4"></div>
+            <div class="shadowBox shadow5"></div>
+        </div>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+        <slot />
+
+        <script src="./main.js"></script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                width: 100%;
+                height: auto;
+            }
+            body {
+                overflow-x: hidden;
+                position: relative;
+            }
+
+            .shadowBox {
+                width: 50vw;
+                max-width: 800px;
+                min-width: 300px;
+                height: 60vw;
+                max-height: 1000px;
+                min-height: 300px;
+                position: absolute;
+                left: -5vw;
+                z-index: -50;
+                border-radius: 50%;
+                transform: rotate(40deg);
+                background: radial-gradient(
+                    ellipse at center,
+                    var(--primaryShadowBox) 20%,
+                    rgba(0, 0, 0, 0) 60%
+                );
+                filter: blur(40px);
+                pointer-events: none;
+            }
+            .shadows-container {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: clip;
+                z-index: -100;
+                pointer-events: none;
+            }
+            .shadow2 {
+                top: 80vh;
+            }
+            .shadow3 {
+                top: 100vh;
+                left: 60vw;
+            }
+            .shadow4 {
+                top: 300vh;
+            }
+            .shadow5 {
+                top: 280vh;
+                left: 70vw;
+            }
+
+            @media (max-width: 600px) {
+                .shadows-container{
+                }
+                .shadowBox {
+                    width: 100vw;
+                    height: 100vw;
+                }
+                .shadow1{
+                    top: 10%;
+                }
+                .shadow2{
+                    top: 18%;
+                }
+                .shadow3 {
+                    top: 50%;
+                    left: 10%;
+                }
+                .shadow4 {
+                    left: 10%;
+                    top: 77%;
+                }
+                .shadow5 {
+                    top: 82%;
+                    left: -20%;
+                }
+            }
+        </style>
+    </body>
+</html>
