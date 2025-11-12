@@ -1,0 +1,251 @@
+<section
+    id="contact"
+    class="mt-10 overflow-hidden max-w-7xl mx-auto grid grid-cols-1 gap-4 p-4 lg:grid-cols-2"
+>
+    <h2
+        class="text-3xl font-bold text-[var(--primaryTextColor)] text-center lg:col-span-2 mb-4"
+    >
+        Contacto
+    </h2>
+    <div class="flex flex-col gap-4 justify-start">
+        <h1
+            class="text-3xl font-bold text-center text-[var(--primaryTextColor)] lg:text-left"
+        >
+            Construyamos algo increíble juntos
+        </h1>
+        <p class="text-[var(--secondaryTextColor)]">
+            Si tenés una idea, un proyecto o simplemente querés charlar sobre
+            desarrollo, estoy a un mensaje de distancia.
+        </p>
+    </div>
+    <form
+        id="contactForm"
+        class="flex flex-col gap-6 p-6 bg-gradient-to-br from-[var(--primaryColor)]/10 to-[var(--terciaryColor)]/5 rounded-2xl border border-[var(--primaryColor)]/20 backdrop-blur-sm"
+    >
+        <!-- Campo Nombre -->
+        <div class="relative">
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] placeholder-transparent focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300"
+                placeholder="Tu nombre"
+            />
+            <label
+                for="name"
+                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[var(--secondaryTextColor)] peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-[var(--terciaryColor)] peer-focus:bg-[var(--primaryBackgroundColor)]"
+            >
+                Nombre completo
+            </label>
+        </div>
+
+        <!-- Campo Email -->
+        <div class="relative">
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] placeholder-transparent focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300"
+                placeholder="tu@email.com"
+            />
+            <label
+                for="email"
+                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[var(--secondaryTextColor)] peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-[var(--terciaryColor)] peer-focus:bg-[var(--primaryBackgroundColor)]"
+            >
+                Email
+            </label>
+        </div>
+
+        <!-- Campo Asunto -->
+        <div class="relative">
+            <select
+                id="subject"
+                name="subject"
+                required
+                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300 appearance-none cursor-pointer"
+            >
+                <option
+                    value=""
+                    disabled
+                    selected
+                    class="text-[var(--secondaryTextColor)]"
+                >
+                    Selecciona un tema
+                </option>
+                <option
+                    value="proyecto"
+                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                >
+                    Nuevo proyecto
+                </option>
+                <option
+                    value="colaboracion"
+                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                >
+                    Colaboración
+                </option>
+                <option
+                    value="colaboracion"
+                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                >
+                    Oferta laboral
+                </option>
+                <option
+                    value="consulta"
+                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                >
+                    Consulta general
+                </option>
+                <option
+                    value="otro"
+                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                >
+                    Otro
+                </option>
+            </select>
+            <label
+                for="subject"
+                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300"
+            >
+                Asunto
+            </label>
+            <!-- Icono del select -->
+            <div
+                class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"
+            >
+                <svg
+                    class="w-5 h-5 text-[var(--secondaryTextColor)]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Campo Mensaje -->
+        <div class="relative">
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] placeholder-transparent focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300 resize-none"
+                placeholder="Contame sobre tu proyecto..."></textarea>
+            <label
+                for="message"
+                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[var(--secondaryTextColor)] peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-[var(--terciaryColor)] peer-focus:bg-[var(--primaryBackgroundColor)]"
+            >
+                Mensaje
+            </label>
+        </div>
+
+        <!-- Checkbox de términos -->
+        <div class="flex items-start gap-3">
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+                class="mt-1 w-5 h-5 text-[var(--primaryColor)] bg-[var(--primaryBackgroundColor)] border-2 border-[var(--primaryColor)]/30 rounded focus:ring-[var(--terciaryColor)] focus:ring-2 focus:ring-offset-0"
+            />
+            <label
+                for="terms"
+                class="text-sm text-[var(--secondaryTextColor)] leading-relaxed cursor-pointer"
+            >
+                Acepto que mis datos sean utilizados para responder a mi
+                consulta. No compartiré tu información con terceros.
+            </label>
+        </div>
+
+        <!-- Botón de envío -->
+        <button
+            type="submit"
+            class="group relative w-full py-4 px-6 bg-gradient-to-r from-[var(--primaryColor)] to-[var(--terciaryColor)] text-[var(--primaryTextColor)] font-semibold rounded-xl transition-all duration-300 hover:from-[var(--terciaryColor)] hover:to-[var(--primaryColor)] hover:shadow-lg hover:shadow-[var(--primaryColor)]/25 focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)] focus:ring-offset-2 focus:ring-offset-[var(--primaryBackgroundColor)] transform hover:scale-[1.02] active:scale-[0.98]"
+        >
+            <span class="relative z-10 flex items-center justify-center gap-2">
+                Enviar mensaje
+                <svg
+                    class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+            </span>
+        </button>
+
+        <!-- Mensaje de información -->
+        <p class="text-center text-sm text-[var(--secondaryTextColor)] mt-2">
+            Te responderé en menos de 24 horas 🚀
+        </p>
+    </form>
+
+    <div
+        id="successModal"
+        class="fixed inset-0 items-center justify-center bg-black/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-500 z-20"
+    >
+        <div
+            class="bg-white rounded-xl shadow-lg px-8 py-6 text-center max-w-sm w-full"
+        >
+            <h2 class="text-xl font-semibold text-green-600">
+                ¡Mensaje enviado!
+            </h2>
+            <p class="mt-2 text-gray-700">Tu mensaje fue enviado con éxito.</p>
+            <button
+                onclick="document.getElementById('successModal').classList.add('hidden')"
+                class="mt-4 text-sm text-blue-600 hover:underline cursor-pointer"
+            >
+                Cerrar
+            </button>
+        </div>
+    </div>
+</section>
+
+<script>
+    const form = document.getElementById("contactForm") as HTMLFormElement;
+
+    if (form) {
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            try {
+                const response = await fetch("/api/sendMail", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        name: (form[0] as HTMLInputElement).value,
+                        email: (form[1] as HTMLInputElement).value,
+                        subject: (form[2] as HTMLInputElement).value,
+                        message: (form[3] as HTMLInputElement).value,
+                    }),
+                });
+                const data = await response.json();
+                if (data.success) {
+                    const modal = document.getElementById("successModal");
+                    if (modal) {
+                        modal.classList.remove("hidden");
+                        modal.classList.add("flex");
+                        modal.classList.add("opacity-100");
+
+                        setTimeout(() => {
+                            modal.classList.add("hidden");
+                            modal.classList.remove("flex");
+                        }, 5000);
+                    }
+                }
+            } catch (error) {}
+        });
+    }
+</script>
