@@ -68,5 +68,5 @@ dots.forEach((dot, i) => {
             zIndex: -100,
             ease: "none",
         })
-        .to(dot, { duration: 15.48 });
+        .to(dot, { duration: 17.2 });
 });
