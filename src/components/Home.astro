@@ -1,6 +1,6 @@
 <section
     id="home"
-    class="pt-30 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 md:max-w-5xl mx-auto p-4 lg:pt-50 lg:gap-50"
+    class="pt-30 pb-40 md:px-30 grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-40 mx-auto p-4 lg:pt-50 lg:gap-20 overflow-clip"
 >
     <div class="order-2 lg:order-1 flex flex-col gap-10">
         <h1
@@ -21,6 +21,21 @@
     <div
         class="relative flex justify-center items-center bg-[var(--backgroundColor)] order-1"
     >
+        <div class="svg-container">
+            <svg
+                class="svg"
+                viewBox="0 0 380 306"
+                width="100"
+                height="100"
+                preserveAspectRatio="xMidYMid meet"
+            >
+                <path
+                    id="path"
+                    d="M 192.028 0.5 C 152.653 0.5 0.5 28.02 0.5 117.494 S 105.035 217.093 192.028 217.489 C 279.674 217.888 385.5 207.641 385.5 117.494 C 385.5 27.3476 231.403 0.5 192.028 0.5"
+                    fill="none"></path>
+            </svg>
+        </div>
+
         <div
             class="relative w-[28rem] h-[28rem] rounded-full border-[16px] border-[var(--primaryColor)] overflow-hidden"
         >
@@ -31,8 +46,175 @@
             />
         </div>
         <div
-            class="absolute w-full h-[100vw] max-w-[550px] max-h-[650px] bg-[radial-gradient(ellipse_at_center,_var(--terciaryColor)_0%,_transparent_70%)] md:w-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 pointer-events-none"
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-7 h-7 bg-blue-600 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('html5_icon.svg'); -webkit-mask-image: url('html5_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-7 h-7 bg-yellow-500 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('css_icon.svg'); -webkit-mask-image: url('css_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-sky-500 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('tailwindcss_icon.svg'); -webkit-mask-image: url('tailwindcss_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-cyan-500 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('react_icon.svg'); -webkit-mask-image: url('react_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-white mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('nextdotjs_icon.svg'); -webkit-mask-image: url('nextdotjs_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-yellow-300 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('nodedotjs_icon.svg'); -webkit-mask-image: url('nodedotjs_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-white mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('express_icon.svg'); -webkit-mask-image: url('express_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-emerald-600 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('mongodb_icon.svg'); -webkit-mask-image: url('mongodb_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-blue-500 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('postgresql_icon.svg'); -webkit-mask-image: url('postgresql_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-green-800 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('spring_icon.svg'); -webkit-mask-image: url('spring_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-orange-600 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('git_icon.svg'); -webkit-mask-image: url('git_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-gray-400 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('github_icon.svg'); -webkit-mask-image: url('github_icon.svg');"
+            >
+            </div>
+        </div>
+
+        <div
+            class="dot w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md"
+        >
+            <div
+                class="w-8 h-8 bg-green-400 mask mask-center mask-contain mask-no-repeat"
+                style="mask-image: url('gsap_icon.svg'); -webkit-mask-image: url('gsap_icon.svg');"
+            >
+            </div>
+        </div>
+        <div
+            class="absolute w-full h-[100vw] max-w-[550px] max-h-[650px] bg-[radial-gradient(ellipse_at_center,_var(--terciaryColor)_0%,_transparent_70%)] md:w-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-200 pointer-events-none"
         >
         </div>
     </div>
+    <script src="./Home.js"></script>
 </section>
+
+<style>
+    .dot {
+        width: 40px;
+        height: 40px;
+        background: var(--secondaryColor);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: -100;
+        scale: 0;
+    }
+    .svg-container {
+        position: absolute;
+        width: 130%;
+        height: 110%;
+        display: flex;
+        justify-content: center;
+        transform: translateY(70px);
+        z-index: 2;
+    }
+
+    .svg {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 1000px) {
+        .svg-container {
+            width: 140%;
+            height: 130%;
+        }
+    }
+</style>
