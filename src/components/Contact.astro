@@ -1,26 +1,26 @@
 <section
     id="contact"
-    class="mt-10 overflow-hidden max-w-7xl mx-auto grid grid-cols-1 gap-4 p-4 lg:grid-cols-2"
+    class="mt-10 overflow-hidden max-w-7xl mx-auto grid grid-cols-1 gap-4 p-4 pt-26 pb-40 lg:grid-cols-2"
 >
     <h2
-        class="text-3xl font-bold text-[var(--primaryTextColor)] text-center lg:col-span-2 mb-4"
+        class="text-3xl font-bold text-(--primaryTextColor) text-center lg:col-span-2 mb-4"
     >
         Contacto
     </h2>
     <div class="flex flex-col gap-4 justify-start">
         <h1
-            class="text-3xl font-bold text-center text-[var(--primaryTextColor)] lg:text-left"
+            class="text-3xl font-bold text-center text-(--primaryTextColor) lg:text-left"
         >
             Construyamos algo increíble juntos
         </h1>
-        <p class="text-[var(--secondaryTextColor)]">
+        <p class="text-(--secondaryTextColor)">
             Si tenés una idea, un proyecto o simplemente querés charlar sobre
             desarrollo, estoy a un mensaje de distancia.
         </p>
     </div>
     <form
         id="contactForm"
-        class="flex flex-col gap-6 p-6 bg-gradient-to-br from-[var(--primaryColor)]/10 to-[var(--terciaryColor)]/5 rounded-2xl border border-[var(--primaryColor)]/20 backdrop-blur-sm"
+        class="flex flex-col gap-6 p-6 bg-linear-to-br from-(--primaryColor)/10 to-(--terciaryColor)/5 rounded-2xl border border-(--primaryColor)/20 backdrop-blur-sm"
     >
         <!-- Campo Nombre -->
         <div class="relative">
@@ -29,12 +29,12 @@
                 id="name"
                 name="name"
                 required
-                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] placeholder-transparent focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300"
+                class="peer w-full px-4 py-3 bg-(--primaryBackgroundColor)/80 border-2 border-(--primaryColor)/30 rounded-xl text-(--primaryTextColor) placeholder-transparent focus:border-(--terciaryColor) focus:outline-none focus:ring-2 focus:ring-(--terciaryColor)/20 transition-all duration-300"
                 placeholder="Tu nombre"
             />
             <label
                 for="name"
-                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[var(--secondaryTextColor)] peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-[var(--terciaryColor)] peer-focus:bg-[var(--primaryBackgroundColor)]"
+                class="absolute left-4 -top-2.5 text-sm text-(--secondaryTextColor) bg-(--primaryBackgroundColor) px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-(--secondaryTextColor) peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-(--terciaryColor) peer-focus:bg-(--primaryBackgroundColor)"
             >
                 Nombre completo
             </label>
@@ -47,12 +47,12 @@
                 id="email"
                 name="email"
                 required
-                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] placeholder-transparent focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300"
+                class="peer w-full px-4 py-3 bg-(--primaryBackgroundColor)/80 border-2 border-(--primaryColor)/30 rounded-xl text-(--primaryTextColor) placeholder-transparent focus:border-(--terciaryColor) focus:outline-none focus:ring-2 focus:ring-(--terciaryColor)/20 transition-all duration-300"
                 placeholder="tu@email.com"
             />
             <label
                 for="email"
-                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[var(--secondaryTextColor)] peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-[var(--terciaryColor)] peer-focus:bg-[var(--primaryBackgroundColor)]"
+                class="absolute left-4 -top-2.5 text-sm text-(--secondaryTextColor) bg-(--primaryBackgroundColor) px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-(--secondaryTextColor) peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-(--terciaryColor) peer-focus:bg-(--primaryBackgroundColor)"
             >
                 Email
             </label>
@@ -64,50 +64,50 @@
                 id="subject"
                 name="subject"
                 required
-                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300 appearance-none cursor-pointer"
+                class="peer w-full px-4 py-3 bg-(--primaryBackgroundColor)/80 border-2 border-(--primaryColor)/30 rounded-xl text-(--primaryTextColor) focus:border-(--terciaryColor) focus:outline-none focus:ring-2 focus:ring-(--terciaryColor)/20 transition-all duration-300 appearance-none cursor-pointer"
             >
                 <option
                     value=""
                     disabled
                     selected
-                    class="text-[var(--secondaryTextColor)]"
+                    class="text-(--secondaryTextColor)"
                 >
                     Selecciona un tema
                 </option>
                 <option
                     value="proyecto"
-                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                    class="bg-(--primaryBackgroundColor) text-(--primaryTextColor)"
                 >
                     Nuevo proyecto
                 </option>
                 <option
                     value="colaboracion"
-                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                    class="bg-(--primaryBackgroundColor) text-(--primaryTextColor)"
                 >
                     Colaboración
                 </option>
                 <option
                     value="colaboracion"
-                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                    class="bg-(--primaryBackgroundColor) text-(--primaryTextColor)"
                 >
                     Oferta laboral
                 </option>
                 <option
                     value="consulta"
-                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                    class="bg-(--primaryBackgroundColor) text-(--primaryTextColor)"
                 >
                     Consulta general
                 </option>
                 <option
                     value="otro"
-                    class="bg-[var(--primaryBackgroundColor)] text-[var(--primaryTextColor)]"
+                    class="bg-(--primaryBackgroundColor) text-(--primaryTextColor)"
                 >
                     Otro
                 </option>
             </select>
             <label
                 for="subject"
-                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300"
+                class="absolute left-4 -top-2.5 text-sm text-(--secondaryTextColor) bg-(--primaryBackgroundColor) px-2 transition-all duration-300"
             >
                 Asunto
             </label>
@@ -116,7 +116,7 @@
                 class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"
             >
                 <svg
-                    class="w-5 h-5 text-[var(--secondaryTextColor)]"
+                    class="w-5 h-5 text-(--secondaryTextColor)"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -137,11 +137,11 @@
                 name="message"
                 rows="5"
                 required
-                class="peer w-full px-4 py-3 bg-[var(--primaryBackgroundColor)]/80 border-2 border-[var(--primaryColor)]/30 rounded-xl text-[var(--primaryTextColor)] placeholder-transparent focus:border-[var(--terciaryColor)] focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)]/20 transition-all duration-300 resize-none"
+                class="peer w-full px-4 py-3 bg-(--primaryBackgroundColor)/80 border-2 border-(--primaryColor)/30 rounded-xl text-(--primaryTextColor) placeholder-transparent focus:border-(--terciaryColor) focus:outline-none focus:ring-2 focus:ring-(--terciaryColor)/20 transition-all duration-300 resize-none"
                 placeholder="Contame sobre tu proyecto..."></textarea>
             <label
                 for="message"
-                class="absolute left-4 -top-2.5 text-sm text-[var(--secondaryTextColor)] bg-[var(--primaryBackgroundColor)] px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[var(--secondaryTextColor)] peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-[var(--terciaryColor)] peer-focus:bg-[var(--primaryBackgroundColor)]"
+                class="absolute left-4 -top-2.5 text-sm text-(--secondaryTextColor) bg-(--primaryBackgroundColor) px-2 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-(--secondaryTextColor) peer-placeholder-shown:top-3 peer-placeholder-shown:bg-transparent peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-(--terciaryColor) peer-focus:bg-(--primaryBackgroundColor)"
             >
                 Mensaje
             </label>
@@ -154,11 +154,11 @@
                 id="terms"
                 name="terms"
                 required
-                class="mt-1 w-5 h-5 text-[var(--primaryColor)] bg-[var(--primaryBackgroundColor)] border-2 border-[var(--primaryColor)]/30 rounded focus:ring-[var(--terciaryColor)] focus:ring-2 focus:ring-offset-0"
+                class="mt-1 w-5 h-5 text-(--primaryColor) bg-(--primaryBackgroundColor) border-2 border-(--primaryColor)/30 rounded focus:ring-(--terciaryColor) focus:ring-2 focus:ring-offset-0"
             />
             <label
                 for="terms"
-                class="text-sm text-[var(--secondaryTextColor)] leading-relaxed cursor-pointer"
+                class="text-sm text-(--secondaryTextColor) leading-relaxed cursor-pointer"
             >
                 Acepto que mis datos sean utilizados para responder a mi
                 consulta. No compartiré tu información con terceros.
@@ -168,7 +168,7 @@
         <!-- Botón de envío -->
         <button
             type="submit"
-            class="group relative w-full py-4 px-6 bg-gradient-to-r from-[var(--primaryColor)] to-[var(--terciaryColor)] text-[var(--primaryTextColor)] font-semibold rounded-xl transition-all duration-300 hover:from-[var(--terciaryColor)] hover:to-[var(--primaryColor)] hover:shadow-lg hover:shadow-[var(--primaryColor)]/25 focus:outline-none focus:ring-2 focus:ring-[var(--terciaryColor)] focus:ring-offset-2 focus:ring-offset-[var(--primaryBackgroundColor)] transform hover:scale-[1.02] active:scale-[0.98]"
+            class="group relative w-full py-4 px-6 bg-linear-to-r from-(--primaryColor) to-(--terciaryColor) text-(--primaryTextColor) font-semibold rounded-xl transition-all duration-300 hover:from-(--terciaryColor) hover:to-(--primaryColor) hover:shadow-lg hover:shadow-(--primaryColor)/25 focus:outline-none focus:ring-2 focus:ring-(--terciaryColor) focus:ring-offset-2 focus:ring-offset-(--primaryBackgroundColor) transform hover:scale-[1.02] active:scale-[0.98]"
         >
             <span class="relative z-10 flex items-center justify-center gap-2">
                 Enviar mensaje
@@ -188,7 +188,7 @@
         </button>
 
         <!-- Mensaje de información -->
-        <p class="text-center text-sm text-[var(--secondaryTextColor)] mt-2">
+        <p class="text-center text-sm text-(--secondaryTextColor) mt-2">
             Te responderé en menos de 24 horas 🚀
         </p>
     </form>
